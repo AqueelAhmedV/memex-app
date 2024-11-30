@@ -1,0 +1,35 @@
+{
+    "routes": [
+      {
+        "src": "/",
+        "dest": "/index.html",
+        "headers": {
+            "Access-Control-Allow-Origin": "*"
+        }
+      },
+      {
+        "src": "/install.ps1",
+        "dest": "/scripts/install.ps1",
+        "headers": {
+            "Access-Control-Allow-Origin": "*",
+            "Content-Type": "text/plain"
+        }
+      },
+      {
+        "src": "/downloads/memex_db_exe",
+        "dest": "/builds/memex_db_stable.exe",
+        "headers": {
+          "Access-Control-Allow-Origin": "*",
+          "Content-Type": "application/x-msdownload"
+        }
+      },
+      {
+        "src": "/downloads/memex_crx",
+        "dest": "/crx/memex_stable.zip",
+        "headers": {
+          "Access-Control-Allow-Origin": "*",
+          "Content-Type": "application/zip"
+        }
+      }
+    ]
+  }
